@@ -1,14 +1,22 @@
 ## 실행 방법
 
-## 1. 워크스페이스 들어가기
+## 1-1. rp_ws 파일을 가지고 있을 때
 
 cd rp_ws/
 
-## 2. 빌드하기
+## 1-2. git clone 했을 때
+
+cd rp_homework/
+
+## 2. 캐시 삭제하기
+
+rm -rf build/ install/ log/
+
+## 3. 빌드하기
 
 colcon build
 
-## 3. 환경 설정
+## 4. 환경 설정
 
 source install/setup.bash
 
@@ -29,7 +37,7 @@ rqt_graph
 mkdir -p ~/rp_ws/src
 cd rp_ws/src
 
-# 2. 패키지 복사, 클론하기
+# 2. 패키지 복사 or 클론하기 (둘 중 하나만 실행)
 
 cp -r <복사할폴더경로> <복사할위치>
  
@@ -41,4 +49,4 @@ cp -r ~/Downloads/rp_homework ~/rp_ws/src/
 
 git clone https://github.com/mjhri04/rp_homework.git
 
-# (## 2.)부터 실행
+# (1-2.)부터 실행
