@@ -2,7 +2,7 @@
 
 ## 1-1. rp_ws 파일을 가지고 있을 때
 
-cd rp_ws/
+cd ~/rp_ws/
 
 ## 1-2. git clone 했을 때
 
@@ -35,6 +35,7 @@ rqt_graph
 # 1. 워크 스페이스 만들기(없다면)
 
 mkdir -p ~/rp_ws/src
+
 cd rp_ws/src
 
 # 2. 패키지 복사 or 클론하기 (둘 중 하나만 실행)
